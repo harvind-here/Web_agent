@@ -21,7 +21,7 @@ The Web Search Assistant is a Python application designed to enhance web search 
    ```
 2. Navigate to the project directory:
    ```
-   cd web-search-assistant
+   cd <folder-name>
    ```
 3. Install the required dependencies:
    ```
@@ -32,11 +32,8 @@ The Web Search Assistant is a Python application designed to enhance web search 
 ## Usage
 Run the application using:
 ```
-python src/main.py
+python main.py
 ```
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
-
-## License
-This project is licensed under the MIT License.
