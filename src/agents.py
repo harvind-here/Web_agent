@@ -12,7 +12,7 @@ class Agent():
         # ip - formatted_prompt, op - 3 searching statements for surf agent
         prompt = format_temp(query, prompt_temp)
         llm_resp = self.__groq_client.chat.completions.create(
-            messages=[{'role': 'system', 'content': f'{prompt}'}], model='llama-3.3-70b-versatile', temperature=0.5
+            messages=[{'role': 'system', 'content': f'{prompt}'}], model='llama-3.3-70b-versatile', temperature=0.8
         )
         statements = llm_resp.choices[0].message.content
         if statements:
@@ -31,12 +31,10 @@ class Agent():
         # )
         # web_content = llm_resp.choices[0].message.content
         prompt = format_temp(query, prompt_temp, url, web_content)
-        print("\n\nPROMPT:\n", prompt)
         llm_resp = self.__groq_client.chat.completions.create(
             messages=[{'role': 'system', 'content': f'{prompt}'}], model='llama-3.3-70b-versatile', temperature=0.4
         )
         decision = llm_resp.choices[0].message.content
-        print("\n\n\n\n", decision)
         if decision:
             json_data = json.loads(decision)
             print("\n\n\n\nAGENT 2 DONE\n\n\n\n")
@@ -44,7 +42,6 @@ class Agent():
 
     def response_agent(self, query: str, web_content, prompt_temp='response_prompt'):
         prompt = format_temp(query, prompt_temp, information=web_content)
-        print("final resp prompt", prompt)
         llm_resp = self.__groq_client.chat.completions.create(
             messages=[{'role': 'system', 'content': f'{prompt}'}], model='llama-3.3-70b-versatile', temperature=0.5
         )

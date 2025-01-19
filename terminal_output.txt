@@ -1,0 +1,39 @@
+(base) PS C:\Users\harvi\Codebases\LLMOps\Agents> & C:/Users/harvi/.conda/miniconda3/python.exe c:/Users/harvi/Codebases/LLMOps/Agents/main.py      
+Enter your query: tell about the timescape model
+
+
+
+
+AGENT 1 DONE
+
+
+
+
+
+
+
+
+AGENT 2 DONE
+
+
+
+
+
+
+
+
+AGENT 2 DONE
+
+
+
+
+
+
+
+
+AGENT 3 DONE
+
+
+
+
+AI response:  The Timescape model, also known as Timescape Cosmology, is an alternative cosmological model that differs from the standard ΛCDM (Lambda-Cold Dark Matter) model. It attempts to explain the evolution and structure of the universe without relying on dark matter and dark energy. The latest research focus on Timescape Cosmology explores its potential to address various cosmological observations and challenges. However, it has not been widely accepted by the scientific community, and several challenges and open questions remain to be addressed. Ongoing research aims to refine the model and resolve these issues, with the goal of providing a more comprehensive understanding of the universe. Further study and discussion are needed to determine the validity and implications of the Timescape model.

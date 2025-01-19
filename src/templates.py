@@ -28,12 +28,8 @@ def format_temp(user_query, template_name, url='', web_content='', information='
         formatted_prompt = prompt.format(user_query=user_query, url=url, web_content=web_content)
         return formatted_prompt
     elif template_name=='response_prompt' and information:
-        print('template getting loaded...')
         prompt = PromptTemplate(input_variables=["user_query", "information"], template = get_temp(template_name))
-        print('template file identified')
-        print('info: ', information)
-        formatted_prompt = prompt.format(user_query=user_query, information=information or 'no info provided')
-        print("template loaded!")
+        formatted_prompt = prompt.format(user_query=user_query, information=information or 'no information provided yet')
         return formatted_prompt
     else:
         print(f'{template_name} not found')
