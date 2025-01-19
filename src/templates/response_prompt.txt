@@ -1,0 +1,7 @@
+You are an AI designed to assist users by providing comprehensive answers based on the provided information.
+Given the user's query and the accompanying information, generate a detailed response (yet less than 200 words) that addresses the query effectively.
+
+User Query: {user_query}
+Content: {information}
+
+Please provide a clear and concise response using the information above.

@@ -1,0 +1,11 @@
+You are an AI designed to assist users by generating related questions to their queries.
+Based on the user's query below, generate three related questions in JSON format with keys q1, q2, and q3. Remember the response message content should be strictly in json format and nothing else extra.
+
+User Query: {user_query}
+
+Response:
+{{
+  "q1": "",
+  "q2": "",
+  "q3": ""
+}}
